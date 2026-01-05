@@ -1,0 +1,87 @@
+/* Container - Grand, Immersive Styling */
+.container {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(to right, #111, #222); /* Dark grand theme */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.5); /* Fiery Rajamouli glow */
+}
+
+/* Title - Bold, Dramatic */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffd700; /* Royal golden color */
+  border-bottom: 3px solid #ff4500; /* Fiery highlight */
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+/* Table - Theatrical Presentation */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.8); /* Cinematic dark background */
+  color: #fff; /* White contrast for readability */
+  font-size: 18px;
+}
+
+th {
+  background: #ff4500; /* Fiery red */
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #555;
+}
+
+/* Table Rows - Alternating Drama */
+tbody tr:nth-child(even) {
+  background: rgba(255, 69, 0, 0.5); /* Subtle fiery effect */
+}
+tbody tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Text Styling */
+.text-primary {
+  color: #ffcc00; /* Golden text */
+  font-weight: bold;
+}
+
+.text-success {
+  color: #32cd32; /* Victory green */
+  font-weight: bold;
+}
+
+.text-danger {
+  color: #dc143c; /* Blood red */
+  font-weight: bold;
+}
+
+/* Hover Effects - Cinematic Flair */
+tr:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  th, td {
+    font-size: 16px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,127 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f8fc;
+  color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Centering the Employee Dashboard */
+.employees-container {
+  width: 95%;
+  max-width: 1100px; /* Reduced width for better sizing */
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Employee Title */
+.employees-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1976d2;
+  border-bottom: 4px solid #1976d2;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+/* Table Wrapper for Proper Positioning */
+.table-wrapper {
+  width: 95%; /* Slightly reduced size */
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Table Styling */
+.employees-table {
+  width: 90%; /* Reduce overall table width */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+/* Table Header & Cells */
+.employees-table th, .employees-table td {
+  padding: 10px; /* Reduced padding */
+  font-size: 15px; /* Smaller font size */
+  text-align: center;
+}
+
+/* Table Header */
+.employees-table th {
+  background: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+/* Alternating Row Colors */
+.employees-table tbody tr:nth-child(even) {
+  background: #e3f2fd;
+}
+
+/* Hover Effects */
+.employees-table tbody tr:hover {
+  background: #bbdefb;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.01); /* Subtle hover effect */
+}
+
+/* Error & Loading Messages */
+.error-message, .loading-message {
+  text-align: center;
+  font-size: 18px;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employees-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .employees-title {
+    font-size: 24px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .employees-table {
+    width: 100%;
+  }
+
+  .employees-table th, .employees-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

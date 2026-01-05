@@ -1,0 +1,121 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f8fc;
+  color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 85%;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Card Styling */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+  border: 2px solid #1976d2;
+}
+
+/* Headings */
+h2 {
+  color: #1976d2;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.form-control, .form-select {
+  background: #ffffff;
+  color: #343a40;
+  border: 1px solid #1976d2;
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control::placeholder {
+  color: #888;
+}
+
+/* Hover & Focus Effects */
+.form-control:focus, .form-select:focus {
+  background: #e3f2fd;
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 10px rgba(25, 118, 210, 0.4);
+}
+
+/* Submit Button */
+.btn-success {
+  width: 100%;
+  background: linear-gradient(135deg, #1976d2, #004085);
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-success:hover {
+  background: linear-gradient(135deg, #0080d1, #0056b3);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(0, 128, 209, 0.4);
+}
+
+/* Label Styling */
+.form-label {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .btn-success {
+    font-size: 16px;
+  }
+}
+
+.form-select {
+  appearance: auto;
+}
+

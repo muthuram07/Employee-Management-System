@@ -1,0 +1,144 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f8fc;
+  color: #343a40;
+}
+
+/* Leave Dashboard */
+.leave-dashboard {
+  max-width: 85%;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Leave Links */
+.leave-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.leave-links button {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1976d2, #004085);
+  color: white;
+  transition: 0.3s ease-in-out;
+  width: 200px;
+}
+
+.leave-links button:hover {
+  background: linear-gradient(135deg, #0080d1, #0056b3);
+  transform: scale(1.05);
+}
+
+/* Leave Info Section */
+.leave-info {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Leave Balance */
+.leave-info h3 {
+  font-size: 22px;
+  color: #1976d2;
+  border-bottom: 3px solid #1976d2;
+  padding-bottom: 8px;
+}
+
+.leave-info p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004085;
+}
+
+/* Leave History */
+.leave-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leave-info ul li {
+  background: #e3f2fd;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.leave-info ul li:hover {
+  background: #bbdefb;
+  transform: scale(1.02);
+}
+
+/* Leave Requests */
+.leave-requests-container {
+  max-width: 85%;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.leave-requests-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leave-requests-container ul li {
+  background: #ffe8e8;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.leave-requests-container ul li:hover {
+  background: #ffc2c2;
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leave-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leave-links button {
+    width: 100%;
+  }
+
+  .leave-dashboard, .leave-requests-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+}
